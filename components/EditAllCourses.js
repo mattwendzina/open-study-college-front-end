@@ -17,7 +17,7 @@ const EditAllCourses = ({
 
       {courses.map((course, i) => (
         <div key={i} className="m-2 w-1/2 ">
-          <div className="flex justify-around	">
+          <div className="flex justify-around">
             <button
               className="h-min self-center"
               onClick={() => deleteCourse(course._id)}
