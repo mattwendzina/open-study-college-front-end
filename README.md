@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+First, run `npm i` to install dependencies.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Then start up the Node server application and run `npm run dev` to start up this Next application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You will need to ensure that you have added the `.env` file to the Node application with the password which should be sent to you. If not please contact the recruitment agency.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Details
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The application is a simple example of how it could consume the APIs in the Node application.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+It includes:
 
-## Learn More
+- Homepage - Lists all the courses and allows some simple sorting methods - Ascending and descending by Course Title, and an input to limit the number of courses displayed.
+- New Course Page - This allows you to add a new course.
+- Edit Course Page - This allows any courses to be edited or deleted.
+- React Course Page - This serves as an example of returning courses based on the React tag.
 
-To learn more about Next.js, take a look at the following resources:
+## With More Time
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+With more time I would have wanted to do the following:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Break down into smaller components. For example, creating a edit form component, or making the NewCourseForm component reusable for this purpose.
+- Install Jest and add in unit tests.
+- Improve the styling.
+- In hindsight I would have commit more frequently as I built up the applicaiton rather than one large commit.
